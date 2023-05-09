@@ -1,12 +1,10 @@
-package com.amigoscode.examples;
+package com.code.examples;
 
 
-import com.amigoscode.beans.Car;
-import com.amigoscode.mockdata.MockData;
+import com.code.beans.Car;
+import com.code.mockdata.MockData;
 import org.junit.jupiter.api.Test;
 
-import java.math.BigDecimal;
-import java.util.DoubleSummaryStatistics;
 import java.util.List;
 
 public class StatisticsWithStreams {

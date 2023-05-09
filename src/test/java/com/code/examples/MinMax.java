@@ -1,8 +1,7 @@
-package com.amigoscode.examples;
+package com.code.examples;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Comparator;
 import java.util.List;
 
 public class MinMax {

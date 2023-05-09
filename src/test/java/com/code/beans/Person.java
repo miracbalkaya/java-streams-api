@@ -1,4 +1,4 @@
-package com.amigoscode.beans;
+package com.code.beans;
 
 public class Person {
 

@@ -1,14 +1,10 @@
-package com.amigoscode.examples;
+package com.code.examples;
 
-import com.amigoscode.beans.Car;
-import com.amigoscode.beans.Person;
-import com.amigoscode.mockdata.MockData;
+import com.code.beans.Car;
+import com.code.mockdata.MockData;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.OptionalInt;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -17,6 +13,12 @@ public class Filtering {
     @Test
     public void filter() throws Exception {
         List<Car> cars = MockData.getCars();
+        List<Car> carsLessThan20k = cars.stream()
+                .filter(car -> car.getPrice() < 20_000.00)
+                .filter(car -> car.getColor().equals("Yellow"))
+                .collect(Collectors.toList());
+
+        carsLessThan20k.forEach(System.out::println);
     }
 
     @Test
